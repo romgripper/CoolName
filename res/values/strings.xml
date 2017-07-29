@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ChineseNameActivity!</string>
+    <string name="app_name">Cool Name</string>
+    <string name="get_your_chinese_name">Get Your Chinese Name</string>
+    <string name="your_chinese_name">Your Chinese Name</string>
+    <string name="font_size">Font size: </string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="input_your_name">Input your English name</string>
+    <string name="copy">Copy</string>
+    <string name="chinese_name">Chinese name:</string>
+    <string name="prononciation">Prononciation (PinYin):</string>
+    <string name="english_name">English name:</string>
+    <string name="get_name">Get Your Chinese Name</string>
+    <string name="loading">Loading. Please wait...</string>
+    <string name="no_internet_access">No Internet access! Please check your Internet connection.</string>
+    <string name="get_name_fail">Sorry, can not get your Chinese name.</string>
+    <string name="save_as">Save as</string>
+    <string name="saved_to">Saved to </string>
+    <string name="save_failed">Save failed! </string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="is_copied">is copied to clipboard.</string>
+    <string name="powered_by">Powered by to www.chinesetools.eu</string>
+</resources>

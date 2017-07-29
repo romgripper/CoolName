@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<FrameLayout
+		android:id="@+id/ads_frame"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">	
+		<com.mobclix.android.sdk.MobclixMMABannerXLAdView
+			android:id="@+id/banner_adview"
+			android:layout_height="50dip"
+			android:layout_width="320dip"
+			android:layout_gravity="center"
+			android:visibility="gone"/>
+	</FrameLayout>
+    <ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollbarStyle="outsideInset">
+		<LinearLayout	  
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+		  	<LinearLayout 
+		  		android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent" 
+				android:layout_margin="1dip">
+			    <TextView 
+			    	android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_margin="1dip"
+					android:text="@string/english_name"/>
+			    <TextView android:id="@+id/english_name" 
+			     	android:layout_height="wrap_content" 
+			     	android:layout_width="wrap_content" 
+			     	android:layout_gravity="center_vertical"
+					android:layout_margin="1dip"
+		    		android:textColor="#ffffffff"
+					android:textStyle="bold"/>
+			</LinearLayout>
+		    <LinearLayout 
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent" 
+				android:layout_margin="1dip">
+		        <TextView 
+		        	android:text="@string/chinese_name"
+		        	android:layout_width="wrap_content" 
+		        	android:layout_margin="1dip" 
+		        	android:layout_height="wrap_content"/>
+		        <TextView android:id="@+id/chinese_name" 
+		        	android:layout_height="wrap_content" 
+		        	android:layout_width="wrap_content" 
+		        	android:layout_weight="1"
+		        	android:layout_gravity="center_vertical"
+					android:layout_margin="1dip"
+		    		android:textColor="#ffffffff"
+					android:textStyle="bold"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent" 
+				android:layout_margin="1dip">
+			    <TextView android:id="@+id/prononciation_prompt"
+			    	android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_margin="1dip"
+					android:text="@string/prononciation"/>
+				<TextView android:id="@+id/prononciation"
+			    	android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_margin="1dip"
+		    		android:textColor="#ffffffff"
+					android:textStyle="bold"/>
+			</LinearLayout>
+			<HorizontalScrollView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dip"
+				android:layout_marginLeft="4dip">
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+				    <ImageView android:id="@+id/name_image" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content"
+						android:layout_margin="1dip"
+						android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</HorizontalScrollView>
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout 
+					android:layout_height="wrap_content"
+			    	android:layout_width="fill_parent" >   	
+				    <Button android:id="@+id/share"
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:gravity="center_horizontal|center_vertical"
+				    	android:layout_weight="0.5"
+				    	android:text="@string/share"
+						android:visibility="gone"/>
+			        <Button android:id="@+id/copy" 
+			        	android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content" 
+				    	android:gravity="center_horizontal|center_vertical"
+				    	android:layout_weight="0.5"
+			        	android:text="@string/copy" 
+						android:visibility="gone"/>
+				</LinearLayout>
+				<Button android:id="@+id/save_as"
+				   	android:layout_width="fill_parent"
+				   	android:layout_height="wrap_content"
+				   	android:gravity="center_horizontal|center_vertical"
+				   	android:text="@string/save_as"
+					android:visibility="gone"/>
+				<com.mobclix.android.sdk.MobclixIABRectangleMAdView
+					android:id="@+id/rect_adview"
+					android:layout_height="250dip"
+					android:layout_width="320dip"
+					android:layout_gravity="center"
+					android:layout_marginTop="2dip"
+					android:visibility="gone"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.bingo.chinese_name" android:versionName="1.0.2" android:versionCode="3">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+        <activity android:name=".ChineseNameActivity"
+                  android:label="@string/app_name" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        
+        
+    	<activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        
+		<meta-data android:name="com.mobclix.APPLICATION_ID" android:value="5AB36EFC-49BA-4376-9A38-A6A2A3C12C33"/>
+		<activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		<meta-data android:name="com.mobclix.LOG_LEVEL" android:value="DEBUG"/>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>	
+	
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="10"/>
+
+</manifest> 
